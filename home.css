@@ -1,0 +1,379 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f2e9c6;
+    }
+
+    /* HEADER */
+    header {
+        background: #7ee9f5;
+        padding: 45px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    header h1{
+
+        font-size: 56px;
+    }
+
+    /* NAV MENU */
+    nav {
+        background: #f2e9c6;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+         text-align: center;
+         
+        
+    }
+    nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+        background-color:  #7ee9f5;
+        padding:40px;
+       
+    
+        
+
+       
+        
+    }
+
+    nav a.active {
+    background-color: #00a3cc;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #00a3cc;
+    color: white;
+}
+
+nav p{
+
+    padding:10px;
+    height:1px;
+    
+
+}
+
+.hr{
+    border: none;
+      height: 2px;
+      background: black;
+      margin: 2rem auto;
+      width: 80%;
+}
+
+    /* SEARCH BAR (CSS COLLAPSE) */
+    details {
+        width: 90%;
+        max-width: 670px;
+        margin: 12px auto;
+    }
+    summary {
+        cursor: pointer;
+        font-size: 20px;
+        text-align: right;
+        list-style: none;
+    }
+    summary::-webkit-details-marker {
+        display: none; /* hide arrow */
+    }
+
+    #searchInput {
+        width: 99%;
+        padding: 10px;
+        border: 2px solid #999;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    /* ICON GRID */
+    .grid {
+        width: 90%;
+        max-width: 420px;
+          margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        text-align: center;
+    }
+    .grid div {
+        font-size: 14px;
+    }
+    .grid img {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: auto;
+    }
+
+    .gridgpu{
+
+        width: 100px;
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        text-align: center;
+    }
+
+   .grid-fan-others {
+    width: 90%;
+    max-width: 720px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    justify-items: center; /* center horizontally ONLY */
+}
+
+.grid-fan-others div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers image + text horizontally */
+    text-align: center;   /* keeps label centered under image */
+}
+
+.grid-fan-others img {
+    width: 90px;
+    height: 89px;
+    display: block;
+    margin-bottom: 6px;   /* ensures text stays beneath the image */
+}
+
+
+    /* A (?) TRENDING ARTICLE */
+    .article {
+        width: 70%;
+        max-width: 420px;
+      
+       
+        margin: 30px auto;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    }
+    .article img {
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    .article a {
+        color: #0066ff;
+        text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #292929;
+        color: #fff;
+        padding: 150px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    /* Big screens*/
+    @media screen and (max-width: 2160px) {
+    nav {
+        justify-content: center;
+        gap: 88px;
+        font-size:78 px;
+    }
+
+    nav a {
+        font-size: 24px;
+        padding: 12px ;
+    }
+
+    header {
+        font-size: 48px;
+    }
+
+     .grid {
+        width: 90%;
+        max-width: 2160px;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        text-align: center;
+    }
+
+     
+    
+    .grid div {
+        font-size: 19px;
+    }
+    .grid img {
+        width: 65px;
+        height: 65px;
+        display: block;
+        margin: auto;
+    }
+
+     details {
+        width: 90%;
+        max-width: 2140px;
+        margin: 12px auto;
+    }
+
+     summary {
+        cursor: pointer;
+        font-size: 45px;
+        text-align: right;
+        list-style: none;
+    }
+
+     footer {
+        background: #292929;
+        color: #fff;
+        padding: 25px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+
+
+    /* Medium Screens */
+@media screen and (max-width: 800px) {
+    nav {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    header {
+        font-size: 46px;
+    }
+
+     #search-toggle:checked ~ .search-bar {
+        width: 90vw;
+    }
+
+      .grid {
+        width: 90%;
+        max-width: 800px;
+        margin: 28px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 38px;
+        text-align: center;
+    }
+    .grid div {
+        font-size: 17px;
+    }
+    .grid img {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: auto;
+    }
+
+     details {
+        width: 90%;
+        max-width: 670px;
+        margin: 12px auto;
+    }
+
+      summary {
+        cursor: pointer;
+        font-size: 35px;
+        text-align: right;
+        list-style: none;
+      }
+
+       footer {
+        background: #292929;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+}
+
+/* Small Screens */
+@media screen and (max-width: 500px) {
+    nav {
+        display: block;
+        gap:8px;
+       
+    }
+
+    nav a {
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #search-toggle:checked ~ .search-bar {
+        width: 8vw;
+    }
+
+    header {
+        font-size: 23px;
+    }
+
+      .grid {
+        width: 90%;
+        max-width: 500px;
+        margin: 27px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+    .grid div {
+        font-size: 18px;
+    }
+    .grid img {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: auto;
+    }
+
+    .grid-fan-others img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 6px;   /* ensures text stays beneath the image */
+}
+
+
+     details {
+        width: 90%;
+        max-width: 670px;
+        margin: 12px auto;
+    }
+      summary {
+        cursor: pointer;
+        font-size: 25px;
+        text-align: right;
+        list-style: none;
+      }
+
+       footer {
+        background: #292929;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    /*di pa to tapos  ૮(˶╥︿╥)ა */
+}
