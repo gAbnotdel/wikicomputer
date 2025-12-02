@@ -7,14 +7,14 @@ body {
     /* HEADER */
     header {
         background: #7ee9f5;
-        padding: 45px;
+        padding: 13px ;
         text-align: center;
         font-weight: bold;
     }
 
     header h1{
 
-        font-size: 56px;
+        font-size: 46px;
     }
 
     /* NAV MENU */
@@ -32,7 +32,7 @@ body {
         font-weight: bold;
         color: #000;
         background-color:  #7ee9f5;
-        padding:40px;
+        padding: 40px;
        
     
         
@@ -125,10 +125,10 @@ nav p{
    .grid-fan-others {
     width: 90%;
     max-width: 720px;
-    margin: 40px auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: px;
 
     justify-items: center; /* center horizontally ONLY */
 }
@@ -242,21 +242,35 @@ nav p{
     }
 }
 
+/* for phone screens that are in landscape and tablets */
+
+@media screen and (max-width:900px){
+
+nav {
+       justify-content: center;
+    gap: 50px;   
+   }
+
+   nav a {
+    font-size: 19px;
+    padding: 12px;
+    }
+}
 
     /* Medium Screens */
-@media screen and (max-width: 800px) {
+@media screen and (max-width:700px) {
     nav {
         justify-content: center;
-        gap: 40px;
+     gap: 6px;   
     }
 
     nav a {
-        font-size: 20px;
-        padding: 8px 16px;
-    }
+     font-size: 1px;
+     padding: 7px;
+     }
 
     header {
-        font-size: 46px;
+        font-size: 1px;
     }
 
      #search-toggle:checked ~ .search-bar {
@@ -280,6 +294,13 @@ nav p{
         height: 70px;
         display: block;
         margin: auto;
+    }
+    
+    .grid-fan-others img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 6px;   /* ensures text stays beneath the image */
     }
 
      details {
@@ -309,7 +330,7 @@ nav p{
 @media screen and (max-width: 500px) {
     nav {
         display: block;
-        gap:8px;
+        gap: 2px;
        
     }
 
@@ -324,7 +345,7 @@ nav p{
     }
 
     header {
-        font-size: 23px;
+        font-size: 13px;
     }
 
       .grid {
@@ -376,4 +397,3 @@ nav p{
     }
 
     /*di pa to tapos  ૮(˶╥︿╥)ა */
-}
