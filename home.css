@@ -219,6 +219,24 @@ nav p{
         margin: auto;
     }
 
+      .menu-grid {
+    width: 90%;
+   max-width: 2160px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.menu-item {
+    background: #7ee9f5;
+    padding: 23px 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
      details {
         width: 90%;
         max-width: 2140px;
@@ -240,6 +258,10 @@ nav p{
         font-size: 14px;
         margin-top: 40px;
     }
+
+
+    
+
 }
 
 /* for phone screens that are in landscape and tablets */
@@ -255,18 +277,95 @@ nav {
     font-size: 19px;
     padding: 12px;
     }
+
+         .menu-grid {
+    width: 90%;
+   max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
+
+.menu-item {
+    background: #7ee9f5;
+    padding: 23px 20px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+ footer {
+        background: #292929;
+        color: #fff;
+        padding: 35px;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 89px;
+        
+    }
+}
+
+    /*for phone screens that are landscape*/
+     @media screen (max-height:1920px) {
+
+        nav {
+       justify-content: center;
+    gap: 50px;   
+   }
+
+   nav a {
+    font-size: 19px;
+    padding: 12px;
+    }
+
+         .menu-grid {
+    width: 90%;
+   max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.menu-item {
+    background: #7ee9f5;
+    padding: 23px 20px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+ footer {
+        background: #292929;
+        color: #fff;
+        padding: 35px;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 89px;
+        
+    }
+
+
+
+        
+    }
+
+
+   
 
     /* Medium Screens */
 @media screen and (max-width:700px) {
     nav {
         justify-content: center;
-     gap: 45px;   
+     gap: 29px;   
     }
 
     nav a {
      font-size: 19px;
-     padding: 7px;
+     padding: 12px;
      }
 
     header {
@@ -303,6 +402,25 @@ nav {
     margin-bottom: 6px;   /* ensures text stays beneath the image */
     }
 
+     .menu-grid {
+    width: 90%;
+   max-width: 700px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.menu-item {
+    background: #7ee9f5;
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
      details {
         width: 90%;
         max-width: 670px;
@@ -319,25 +437,35 @@ nav {
        footer {
         background: #292929;
         color: #fff;
-        padding: 15px;
+        padding: 25px;
         text-align: center;
         font-size: 16px;
-        margin-top: 40px;
+        margin-top: 89px;
+        
     }
+
+      .menu-grid {
+        grid-template-columns: 2, 1fr;
+        width: 95%;
+        padding: 15px;
+    }
+
+    
+
 }
 
 /* Small Screens */
 @media screen and (max-width: 500px) {
     nav {
         display: block;
-        gap: 2px;
+        gap: 20px;
        
     }
 
     nav a {
         width: 90%;
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     #search-toggle:checked ~ .search-bar {
@@ -345,7 +473,7 @@ nav {
     }
 
     header {
-        font-size: 13px;
+        font-size: 5455px;
     }
 
       .grid {
@@ -374,6 +502,29 @@ nav {
     margin-bottom: 6px;   /* ensures text stays beneath the image */
 }
 
+ .menu-grid {
+    width: 90%;
+   max-width: 500px;
+    margin: 990px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.menu-item {
+    background: #7ee9f5;
+    padding: 200px 20px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+ .menu-grid {
+        grid-template-columns: 2 1fr;
+        width: 95%;
+    }
+
 
      details {
         width: 90%;
@@ -390,10 +541,100 @@ nav {
        footer {
         background: #292929;
         color: #fff;
-        padding: 12px;
+        padding: 20px;
         text-align: center;
         font-size: 14px;
-        margin-top: 40px;
+        margin-top: 10px;
     }
+
+
+
+
+    /*for the menu page*/
+
+    .menu-grid {
+    width: 90%;
+   max-width: 1080px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.menu-item {
+    background: #7ee9f5;
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+footer {
+    background: #292929;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*  BIG SCREENS */
+@media screen and (max-width: 2160px) {
+    nav {
+        justify-content: center;
+        gap: 108px;
+    }
+
+    nav a {
+        font-size: 24px;
+        padding: 12px;
+    }
+
+    header {
+        font-size: 48px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+}
+
+TABLETS / LANDSCAPE PHONES */
+@media screen and (max-width: 900px) {
+  nav {
+      gap: 19px;
+  }
+
+  nav a {
+      font-size: 19px;
+      padding: 92px;
+  }
+}
+
+
+
+/*  SMALL SCREENS */
+@media screen and (max-width: 700px) {
+    nav {
+        gap: 35px;
+    }
+
+    nav a {
+        font-size: 17px;
+        padding: 7px;
+    }
+
+    .menu-grid {
+        grid-template-columns:  1fr;
+        width: 91%;
+        gap:50px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
+
 
     /*di pa to tapos  ૮(˶╥︿╥)ა */
