@@ -170,6 +170,28 @@ nav p{
         text-decoration: none;
     }
 
+
+ /*Featured Article*/
+
+    .boxarticle{
+        display:flex; 
+        gap:15px; 
+        align-items:flex-start;
+    }
+    
+      .centralPu{
+        flex:1;
+        font-size:14px; 
+        line-height:1.6;
+    }
+    
+    .cpu-image{
+        flex:1; 
+        text-align:center;
+        
+    }
+
+
     /* FOOTER */
     footer {
         background: #292929;
