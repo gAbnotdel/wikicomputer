@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCwiki - Donate</title>
+  
+  <link rel="stylesheet" href="backuphomi2026.css">
+  <style>
+
+   
+  </style>
+  
+</head>
+
+
+<body style="background: #1f1f1f;" "color: white;">
+  
+  <!-- HEADER -->
+  <header>
+    <h1>PCwiki</h1>
+  </header>
+  
+  <!-- NAVIGATION -->
+  <nav style="background: #1f1f1f;">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="article.html">Article</a>
+    <a href="about.html">About</a>
+    <a class="active" href="donate.html">Donate</a>
+  </nav>
+  
+
+  
+  
+  <!-- DONATE SECTION -->
+  <section class="donate-section">
+    
+    <div class="donate-container">
+      
+      <h2>Want to donate?</h2>
+      <div class="tiers">
+    
+    <div class="tier" onclick="setAmount(10)">
+        10<br>byte tier
+    </div>
+    
+    <div class="tier" onclick="setAmount(20)">
+        20<br>kb tier
+    </div>
+    
+    <div class="tier" onclick="setAmount(40)">
+        40<br>mb tier
+    </div>
+    
+    <div class="tier" onclick="setAmount(80)">
+        80<br>gb tier
+    </div>
+    
+</div>
+      
+      
+      <p>Or choose your own amount</p>
+      
+      <div class="amount-input">
+        <input type="number" id="customAmount" placeholder="Enter amount">
+      </div>
+      
+      <div class="donate-btn">
+        <button onclick="donate()">Donate now</button>
+      </div>
+      
+      
+      <div class="why-section">
+        
+        <h2 class="why-section-h2">Why donate?</h2>
+        
+        <p>
+          Obviously we need money to maintain the website, and we obviously don't
+          want to run ads on our website, because that's going to ruin the website,
+          and we're a wiki and that's going to affect the website and not in a good
+          way, so the best way to have money while not being greedy is to have
+          donations.
+        </p>
+        
+        <div class="contact">
+          Contact us: <a href="#">123-456-789</a>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </section>
+  
+  
+  <!-- FOOTER -->
+  <footer>
+    © 2025 PCwiki. All rights reserved. | Powered by the community
+  </footer>
+  
+  
+    <script src="donate.js"></script>
+  
+</body>
+
+</html>
