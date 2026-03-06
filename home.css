@@ -34,12 +34,16 @@ body {
         background-color:  #7ee9f5;
         padding: 40px;
        
-    
+
+
+       
+}
+
         
 
        
         
-    }
+    
 
     nav a.active {
     background-color: #00a3cc;
@@ -171,7 +175,7 @@ nav p{
     }
 
 
- /*Featured Article*/
+    /*Featured Article*/
 
     .boxarticle{
         display:flex; 
@@ -191,6 +195,170 @@ nav p{
         
     }
 
+   .about-section{
+        width:70%; 
+        max-width:900px; 
+        margin:40px auto;
+
+    }
+
+    .about-h2{
+        font-size:48px;
+    }
+
+    .about-p{
+        font-size:18px; 
+        line-height:1.8; 
+        text-align:justify;
+    }
+
+/*Donation page*/
+    .donate-section {
+    background:  #1f1f1f;
+    padding: 60px 40px;
+    min-height: 100vh;
+}
+
+.donate-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left; 
+}
+
+/* Headings */
+.donate-container h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Tier buttons grid */
+.tiers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-items: start; /* align grid items left */
+}
+
+.tier {
+    background: #bfcbd3;
+    padding: 30px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 50%;
+}
+
+.tier:hover {
+    background: #aab8c1;
+    transform: translateY(-3px);
+}
+
+/* Input for custom amount */
+.amount-input {
+    margin-top: 20px;
+}
+
+.amount-input input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Donate button */
+.donate-btn {
+    margin-top: 25px;
+}
+
+.donate-btn button {
+    background: #2ed000;
+    border: none;
+    padding: 18px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.donate-btn button:hover {
+    background: #25a800;
+    transform: translateY(-2px);
+}
+
+/* Why donate section */
+.why-section {
+    margin-top: 70px;
+}
+
+.why-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.why-section p {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Contact link */
+.contact {
+    margin-top: 30px;
+}
+
+.contact a {
+    color: #4ea3ff;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #292929;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .tiers {
+        grid-template-columns: fr;
+        
+    }
+
+    .donate-container h2 {
+        font-size: 32px;
+    }
+
+    .tier {
+        font-size: 18px;
+        padding: 25px 20px;
+    }
+
+    .donate-btn button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .amount-input input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .why-section h2 {
+        font-size: 28px;
+    }
+}
+    
+
+    
 
     /* FOOTER */
     footer {
@@ -477,7 +645,7 @@ nav {
 }
 
 /* Small Screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     nav {
         display: block;
         gap: 20px;
@@ -622,17 +790,7 @@ footer {
     }
 }
 
-TABLETS / LANDSCAPE PHONES */
-@media screen and (max-width: 900px) {
-  nav {
-      gap: 19px;
-  }
 
-  nav a {
-      font-size: 19px;
-      padding: 92px;
-  }
-}
 
 
 
@@ -657,6 +815,9 @@ TABLETS / LANDSCAPE PHONES */
         font-size: 32px;
     }
 }
+
+
+
 
 
     /*di pa to tapos  ૮(˶╥︿╥)ა */
